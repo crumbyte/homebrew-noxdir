@@ -2,7 +2,7 @@
 cask "noxdir" do
   desc "Terminal utility for visualizing file system usage."
   homepage "https://github.com/crumbyte/noxdir"
-  version "0.4.1"
+  version "0.5.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,23 +16,23 @@ cask "noxdir" do
 
   on_macos do
     on_intel do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.4.1/noxdir_Darwin_x86_64.tar.gz"
-      sha256 "8f90316ec1ba9c6726d23229f1c69dfa6f751088f5aefc6323f165388ae93d95"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.5.0/noxdir-v0.5.0-Darwin_x86_64.tar.gz"
+      sha256 "7160cbaf9295807e0832d491dbf96f6b98045598d903fa32d99341774ce8e203"
     end
     on_arm do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.4.1/noxdir_Darwin_arm64.tar.gz"
-      sha256 "919f546f9218e02b7fa9f2b4379d9dd0f69f1bcee9c9409d724911134573cbee"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.5.0/noxdir-v0.5.0-Darwin_arm64.tar.gz"
+      sha256 "deb491c5723a8ac20d80b6edd38474fae02f604175e58c4955f080b1b4ad6a39"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.4.1/noxdir_Linux_x86_64.tar.gz"
-      sha256 "78a9a7316d9a62254379d0973899b5e843f27338beecee84b304c2d7e3b913ae"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.5.0/noxdir-v0.5.0-Linux_x86_64.tar.gz"
+      sha256 "28c3448b86b8ce48d73bcaf01dacab35cdd09dbf5219bac443d5100515913c9a"
     end
     on_arm do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.4.1/noxdir_Linux_arm64.tar.gz"
-      sha256 "fb575070c12ed94b146d6dcd94b8629cd4f716aa9554a0a0d3a4c73d4bb79570"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.5.0/noxdir-v0.5.0-Linux_arm64.tar.gz"
+      sha256 "ab1b4852e51d06ed5cc4d2ec09f79dd91d24c39cb8e304cb19bdae14240ff655"
     end
   end
 
