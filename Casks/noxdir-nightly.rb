@@ -2,7 +2,7 @@
 cask "noxdir-nightly" do
   desc "Nightly build of the terminal utility for visualizing file system usage."
   homepage "https://github.com/crumbyte/noxdir"
-  version "0.7.0-nightly"
+  version "0.8.0-nightly"
 
   livecheck do
     skip "Auto-generated on release."
@@ -16,23 +16,23 @@ cask "noxdir-nightly" do
 
   on_macos do
     on_intel do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.7.0-nightly/noxdir-v0.7.0-nightly-Darwin_x86_64.tar.gz"
-      sha256 "82afc1252ee2349aa4d19873d58aeb3482c64a67bd41947dfed3db46af07d99a"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.8.0-nightly/noxdir-v0.8.0-nightly-Darwin_x86_64.tar.gz"
+      sha256 "f156639ba24327c20ce7d78ebc5a287fe1012c90bf696bc9777025e6610f4541"
     end
     on_arm do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.7.0-nightly/noxdir-v0.7.0-nightly-Darwin_arm64.tar.gz"
-      sha256 "444cb7d3980b5e7bb8c09eb39090aae576a31ed238fad9422c6d3fa4c4393013"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.8.0-nightly/noxdir-v0.8.0-nightly-Darwin_arm64.tar.gz"
+      sha256 "11266685b71d4b5d27326e352bbe70c156f3fb41f6a424781f6d3ba2cb2973a8"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.7.0-nightly/noxdir-v0.7.0-nightly-Linux_x86_64.tar.gz"
-      sha256 "6de7fe6a6693162ec35975aa1d5b1bd66391a689b1f818772d2f8c3bbddf8a0e"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.8.0-nightly/noxdir-v0.8.0-nightly-Linux_x86_64.tar.gz"
+      sha256 "0c94b598c5f795a453daffe4417d610b64ea3e8a81202ebf45032d81df8f027b"
     end
     on_arm do
-      url "https://github.com/crumbyte/noxdir/releases/download/v0.7.0-nightly/noxdir-v0.7.0-nightly-Linux_arm64.tar.gz"
-      sha256 "5feb003f55e670a0826dfa49beaa160e81b681a8511292192f88d42c859c53dc"
+      url "https://github.com/crumbyte/noxdir/releases/download/v0.8.0-nightly/noxdir-v0.8.0-nightly-Linux_arm64.tar.gz"
+      sha256 "15cdf2023f5bc6bd6611fee69f2648e2c4d0926c28d7653cfe6cadb8b469657a"
     end
   end
 
