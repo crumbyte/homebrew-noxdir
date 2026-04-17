@@ -5,22 +5,22 @@ cask "noxdir-nightly" do
   on_macos do
     on_intel do
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Darwin_x86_64.tar.gz"
-      sha256 "8d9a37d33b0c8a429567867fa4be23a3b45e0485f27795f6e01be0529c313446"
+      sha256 "8521567b0c017d37833df7cc9fad2c2e998fa9e01227b0e695f87d2c809aa0e0"
     end
     on_arm do
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Darwin_arm64.tar.gz"
-      sha256 "d7c7f7f9bd6c4f63f24213d630752f4c29842ebd3606c218ad9ee63ab24eca40"
+      sha256 "3b7ba6ce29a1fc24d962b4b3b3f4459e31fff062b0b84bf265785098cb9b2799"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Linux_x86_64.tar.gz"
-      sha256 "23b034fb1916f441c6f8d4c14ccc99b0979833bea822acb4154793ffa4fa1d90"
+      sha256 "2f43d8207396fcfebe6f90a1f19bd3455619eebb8695a288bbf3de8e3d095085"
     end
     on_arm do
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Linux_arm64.tar.gz"
-      sha256 "ff5e13e001b230c00dc8e8021c572a13ada200703d98cbd90467fbb1fb7fb596"
+      sha256 "c88594022fe452068d7e206c32b57285ecf2e4dd721ed699797e9c0ef1f84497"
     end
   end
 
