@@ -3,24 +3,23 @@ cask "noxdir-nightly" do
   version "1.3.0-nightly"
 
   on_macos do
-    on_intel do
-      sha256 "3e2fd2cc54380028de588f7e2bcac144f133ea503d96946ff0a91fc4f9d071e6"
-      url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Darwin_x86_64.tar.gz"
-    end
     on_arm do
-      sha256 "b4a07a281e312752581164519169f7b670133af920ca43ae104d0f41945308dc"
+      sha256 "95655df5416b9bc7625d4cb4e64085424821900c320ce38716a9f5f7e246450f"
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Darwin_arm64.tar.gz"
     end
-  end
-
-  on_linux do
     on_intel do
-      sha256 "f115336192681cf8639be11b75b30e791cfb977dcc33aee081689d74b5ecbc6f"
-      url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Linux_x86_64.tar.gz"
+      sha256 "d4a87b9523211943f9553cfb1b0756427eb86e4c1c2523c6083c8de7c12a3f91"
+      url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Darwin_x86_64.tar.gz"
     end
+  end
+  on_linux do
     on_arm do
-      sha256 "367d33497e727f0b9cf95e64573662e3a5776d822e2010b09b2622d5039502c4"
+      sha256 "c79316f10a2b50d19a56de4700592ebf2bf6a26b22b1ecd8a6ae693949a9089f"
       url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Linux_arm64.tar.gz"
+    end
+    on_intel do
+      sha256 "c37d400fabb1b4e117e2ba02fec1671ea546c807d5313952af487e91dd9b0bcb"
+      url "https://github.com/crumbyte/noxdir/releases/download/v#{version}/noxdir-v#{version}-Linux_x86_64.tar.gz"
     end
   end
 
@@ -35,8 +34,8 @@ cask "noxdir-nightly" do
   binary "noxdir"
   manpage "man/noxdir.1"
   bash_completion "completion/noxdir.bash"
-  fish_completion "completion/noxdir.fish"
   zsh_completion "completion/noxdir.zsh"
+  fish_completion "completion/noxdir.fish"
 
   postflight do
     if system_command("/usr/bin/xattr", args: ["-h"]).exit_status == 0
@@ -45,5 +44,4 @@ cask "noxdir-nightly" do
   end
 
   # No zap stanza required
-
 end
